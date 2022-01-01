@@ -3,7 +3,7 @@
 include "koneksi.php";
 
 // Ambil Data yang Dikirim dari Form
-$nis = $_POST['nis'];
+$nrp = $_POST['nrp'];
 $nama = $_POST['nama'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $telp = $_POST['telp'];
@@ -20,8 +20,8 @@ $path = "images/".$fotobaru;
 // Proses upload
 if(move_uploaded_file($tmp, $path)){ // Cek apakah gambar berhasil diupload atau tidak
   // Proses simpan ke Database
-  $sql = $pdo->prepare("INSERT INTO siswa(nis, nama, jenis_kelamin, telp, alamat, foto) VALUES(:nis,:nama,:jk,:telp,:alamat,:foto)");
-  $sql->bindParam(':nis', $nis);
+  $sql = $pdo->prepare("INSERT INTO siswa(nrp, nama, jenis_kelamin, telp, alamat, foto) VALUES(:nrp,:nama,:jk,:telp,:alamat,:foto)");
+  $sql->bindParam(':nrp', $nrp);
   $sql->bindParam(':nama', $nama);
   $sql->bindParam(':jk', $jenis_kelamin);
   $sql->bindParam(':telp', $telp);

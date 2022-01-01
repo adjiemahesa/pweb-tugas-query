@@ -6,7 +6,7 @@ include "koneksi.php";
 $id = $_GET['id'];
 
 // Ambil Data yang Dikirim dari Form
-$nis = $_POST['nis'];
+$nrp = $_POST['nrp'];
 $nama = $_POST['nama'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $telp = $_POST['telp'];
@@ -20,8 +20,8 @@ $tmp = $_FILES['foto']['tmp_name'];
 if(empty($foto)){ // Jika user tidak memilih file foto pada form
   // Lakukan proses update tanpa mengubah fotonya
   // Proses ubah data ke Database
-  $sql = $pdo->prepare("UPDATE siswa SET nis=:nis, nama=:nama, jenis_kelamin=:jk, telp=:telp, alamat=:alamat WHERE id=:id");
-  $sql->bindParam(':nis', $nis);
+  $sql = $pdo->prepare("UPDATE siswa SET nrp=:nrp, nama=:nama, jenis_kelamin=:jk, telp=:telp, alamat=:alamat WHERE id=:id");
+  $sql->bindParam(':nrp', $nis);
   $sql->bindParam(':nama', $nama);
   $sql->bindParam(':jk', $jenis_kelamin);
   $sql->bindParam(':telp', $telp);
@@ -58,8 +58,8 @@ if(empty($foto)){ // Jika user tidak memilih file foto pada form
       unlink("images/".$data['foto']); // Hapus file foto sebelumnya yang ada di folder images
     
       // Proses ubah data ke Database
-    $sql = $pdo->prepare("UPDATE siswa SET nis=:nis, nama=:nama, jenis_kelamin=:jk, telp=:telp, alamat=:alamat, foto=:foto WHERE id=:id");
-    $sql->bindParam(':nis', $nis);
+    $sql = $pdo->prepare("UPDATE siswa SET nrp=:nrp, nama=:nama, jenis_kelamin=:jk, telp=:telp, alamat=:alamat, foto=:foto WHERE id=:id");
+    $sql->bindParam(':nrp', $nrp);
     $sql->bindParam(':nama', $nama);
     $sql->bindParam(':jk', $jenis_kelamin);
     $sql->bindParam(':telp', $telp);

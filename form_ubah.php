@@ -168,7 +168,7 @@
         <?php
         // Load file koneksi.php
         include "koneksi.php";
-        // Ambil data NIS yang dikirim oleh index.php melalui URL
+        // Ambil data NRP yang dikirim oleh index.php melalui URL
         $id = $_GET['id'];
         // Query untuk menampilkan data siswa berdasarkan ID yang dikirim
         $sql = $pdo->prepare("SELECT * FROM siswa WHERE id=:id");
@@ -179,8 +179,8 @@
         <form id="styling" method="post" action="proses_ubah.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
             <h3>Ubah Data Siswa</h3>
             <fieldset>
-                <p>NIS</p>
-                <input placeholder="NIS" type="text" name="nis" value="<?php echo $data['nis']; ?>" tabindex="1" required autofocus>
+                <p>NRP</p>
+                <input placeholder="NRP" type="text" name="nrp" value="<?php echo $data['nrp']; ?>" tabindex="1" required autofocus>
             </fieldset>
             <fieldset>
                 <p>Nama</p>

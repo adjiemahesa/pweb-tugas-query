@@ -1,7 +1,7 @@
 <?php
     // Load file koneksi.php
     include "koneksi.php";
-    // Ambil data NIS yang dikirim oleh index.php melalui URL
+    // Ambil data NRP yang dikirim oleh index.php melalui URL
     $id = $_GET['id'];
     // Query untuk menampilkan data siswa berdasarkan ID yang dikirim
     $sql = $pdo->prepare("SELECT foto FROM siswa WHERE id=:id");

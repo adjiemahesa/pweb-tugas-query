@@ -116,7 +116,7 @@
                 <thead>
                     <tr>
                         <th>Foto</th>
-                        <th>NIS</th>
+                        <th>NRP</th>
                         <th>Nama</th>
                         <th>Jenis Kelamin</th>
                         <th>Telepon</th>
@@ -133,7 +133,7 @@
                         while ($data = $sql->fetch()) { // Ambil semua data dari hasil eksekusi $sql
                             echo "<tr>";
                             echo "<td><img src='images/" . $data['foto'] . "' width='100' height='100'></td>";
-                            echo "<td>" . $data['nis'] . "</td>";
+                            echo "<td>" . $data['nrp'] . "</td>";
                             echo "<td>" . $data['nama'] . "</td>";
                             echo "<td>" . $data['jenis_kelamin'] . "</td>";
                             echo "<td>" . $data['telp'] . "</td>";
