@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Aplikasi CRUD Upload Gambar dengan PHP</title>
+    <title>CRUD Gambar dengan Query</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/cotton/64/000000/cloud-storage.png" />
     <style type="text/css">
         h1 {

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Form Ubah - Aplikasi CRUD Upload Gambar dengan PHP</title>
+    <title>Form Edit</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/cotton/64/000000/cloud-storage.png" />
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600&display=swap');
