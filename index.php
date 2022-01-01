@@ -121,7 +121,7 @@
                         <th>Jenis Kelamin</th>
                         <th>Telepon</th>
                         <th>Alamat</th>
-                        <th colspan="2" style="text-align:center; padding-right: 60px">Aksi</th>
+                        <th colspan="2" style="text-align:center; padding-right: 60px">Edit</th>
                     </tr>
                     <div class="button-41">
                         <?php
