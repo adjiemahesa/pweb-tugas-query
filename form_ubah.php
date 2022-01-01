@@ -4,7 +4,7 @@
     <title>Form Ubah - Aplikasi CRUD Upload Gambar dengan PHP</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/cotton/64/000000/cloud-storage.png" />
     <style type="text/css">
-        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600&display=swap');
 
         * {
             margin: 0;
@@ -19,12 +19,12 @@
         }
 
         body {
-            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            font-family: 'Urbanist', sans-serif;
             font-weight: 100;
             font-size: 12px;
             line-height: 30px;
             color: #777;
-            background: #4CAF50;
+            background: #02055b;
         }
 
         .container {
@@ -40,7 +40,7 @@
         #styling input[type="url"],
         #styling textarea,
         #styling button[type="submit"] {
-            font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+            font: 400 12px/16px 'Urbanist', sans-serif;
         }
 
         #styling {
@@ -105,7 +105,7 @@
             cursor: pointer;
             width: 30%;
             border: none;
-            background: #4CAF50;
+            background: #89cff0;
             color: #FFF;
             margin-top: 30px;
             padding: 10px;
@@ -116,15 +116,16 @@
             cursor: pointer;
             width: 30%;
             border: none;
-            background: #4CAF50;
+            background: #89cff0;
             color: #FFF;
             margin: 0 0 5px;
             padding: 10px;
             font-size: 15px;
         }
 
-        #styling button[type="submit"]:hover {
-            background: #43A047;
+        #styling button[type="submit"]:hover,
+        #styling button[type="button"]:hover {
+            background: #003166;
             -webkit-transition: background 0.3s ease-in-out;
             -moz-transition: background 0.3s ease-in-out;
             transition: background-color 0.3s ease-in-out;
